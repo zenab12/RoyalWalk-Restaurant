@@ -1,0 +1,151 @@
+@font-face{font-family:"PT serif";src:url(../fonts1/PTSerif-Italic.ttf)}
+@font-face{font-family:Sacramento-Regular;src:url(../fonts1/Sacramento-Regular.ttf)}
+body{background-color:#fff;margin:0;padding:0;font-family:'Titillium Web',sans-serif;font-family:"PT serif",Pacifico,cursive;display:flex;flex-direction:column;width:100%;margin:0;justify-content:flex-start}
+.card img{width:150px;height:150px}
+section{display:flex;flex-direction:row;justify-content:space-between;flex-wrap:wrap;width:100%;position:relative;margin-bottom:50px}
+header,nav{width:100%}
+header .slider{width:100%}
+header .slider img{width:100%;height:100%}
+nav{background:#000;color:#f5f5f5;justify-content:space-between;flex-wrap:wrap;display:flex;padding:0;margin-top:-.4%}
+header nav h2{justify-content:flex-start;text-transform:uppercase;font-size:30px;font-family:Pacifico;width:30%;margin-right:0;margin-left:1rem}
+h2 span{color:#8b0000}
+header nav ul{padding-left:0;width:60%;display:flex;flex-direction:row;justify-content:space-between;margin-right:5%;margin-top:0;padding:0;margin-bottom:0}
+header nav ul li{list-style-type:none;padding:10px;text-transform:uppercase;font-size:16px;width:20%;text-align:center;transition:background-color .7s ease-in-out}
+header nav ul li a{color:#fff;text-decoration:none;line-height:30px;margin-bottom:0;line-height:5rem}
+header nav ul li:hover{color:#f7ebeb;text-decoration:none;background-color:#8b0000}
+section.aboutus,section.features,section.myskills{flex-direction:column}
+.Menu h2,.ourMenu h2,section.aboutus h2,section.features h2,section.myskills h2{justify-content:center;color:#8b0000;text-align:center;padding-bottom:2%}
+section .container{display:flex;flex-direction:row;justify-content:space-evenly;flex-wrap:wrap;width:90%;margin-left:5%;margin-right:5%}
+.features{background:url(../images/people-2557408_1920.jpg?2101291533) no-repeat fixed 50% 100%;background-size:cover}
+.features .feat{width:320px;background-color:rgba(17,16,16,.4);margin-bottom:20px;border:.5px solid #f0a94c;padding:10px}
+.aboutus h2,.cheif h2,.features .feat h2,.features .feat h3{color:#8b0000;text-transform:lowercase;text-align:center;text-shadow:1px 1px 1px brown,1px 1px 1px gray}
+.features .feat h3,.myskills h3{color:#fbe97e;text-shadow:none;font-size:27px}
+.features .feat p{line-height:1.4;color:#bdb7b2;text-align:center;font-size:18px;width:90%;font-family:Arial}
+.features .feat:hover{transform:scale3d(1.1,1.1,1.2);transition:all 1s linear;filter:opacity(.9);box-shadow:6px 6px 5px orange}
+h2.border::before{content:'';display:block;width:40%;height:.5px;position:absolute;background:#d6a70a;right:55%;top:20%}
+h2.border::after{content:"";width:40%;display:block;height:.5px;position:absolute;left:55%;top:20%;background:#d6a70a}
+section h2.border::before{top:8%}
+section h2.border::after{top:8%}
+section.aboutus .container,section.cheif .container,section.myskills .container,section.ourMenu .container{justify-content:flex-start;justify-content:center}
+.aboutus .image{width:564px;height:484px}
+.ourSkills{padding:2rem;width:500px;height:420px}
+.aboutus .image img{width:90%;height:100%}
+.aboutus .info,.skills{width:500px;background:#8b0000;height:420px;padding:2rem;display:flex;flex-direction:column}
+.aboutus .info p,.skills p{color:#c7ad64}
+.aboutus .info h2{text-align:center;color:#d6a70a}
+.aboutus .info h3{color:#fff}
+.aboutus .info p.signature{color:#fff;align-self:flex-end;font-family:Sacramento-Regular;margin-bottom:10px}
+section.myskills .ourSkills{background:#c7ad64;display:flex;flex-direction:column;justify-content:center}
+.myskills .ourSkills .progress-bar{width:100%;background-color:rgba(240,229,229,.979);height:15px;margin-bottom:2%}
+.myskills .ourSkills .progress{width:70%;background:linear-gradient(to left ,#440303,#1d1501);height:100%}
+.myskills .ourSkills p{color:#8b0000;font-size:18px;margin-bottom:1rem}
+.myskills .skill{margin-bottom:6.5%}
+.myskills h3{margin-top:10px}
+section.resume{flex-direction:column}
+.resume{background:url(../images/macarons-2548827_1920.jpg?2101291533) no-repeat fixed 50% 50%;background-size:cover;text-align:center;margin:0}
+.Menu h2,.ourMenu h2,.resume h2{color:#8b0000;font-size:35px;font-family:Sacramento-Regular;background-color:#fff;width:400px;justify-content:center;align-self:center}
+.resume .cardResume{width:400px;height:500px;transform-origin:center;perspective:1000px;position:relative;transform-style:preserve-3d;transition:all 1s ease-in-out;margin:0 auto;margin-bottom:10px}
+.resume .cardResume>div{width:400px;height:500px;position:absolute;border-radius:20px 30px 20px 30px}
+.cardResume:hover{transform:rotateY(180deg)}
+.resume .front{z-index:2;background:repeating-linear-gradient(10deg,#0a0000,#310307,#730710);backface-visibility:hidden;display:flex;flex-direction:column}
+.front:hover{box-shadow:1px 1px 1px gray}
+.resume .front .head{background:#fff;height:100px;border-radius:20px 30px 0 0}
+.head img{margin:10px;width:150px;height:120px;border-radius:20px;position:relative;top:7px}
+.front p{line-height:30px;text-align:center;justify-content:center;color:snow;line-height:1.5rem;margin:90px;margin-bottom:20px}
+.front span{color:#c7ad64;font-size:24px;font-family:Sacramento-Regular;font-weight:700}
+.resume .back{background:linear-gradient(#c7ad64,#f8c946);z-index:1;transform:rotateY(180deg);backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cardResume .back ul{list-style:none;line-height:2;color:#8b0000;font-weight:700;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.resume button{background-color:#fff;border:4px double #bc8f8f;width:200px;color:#8b0000;justify-content:center;align-self:center;margin-bottom:10px;transition:all .6s ease-in-out;padding:1rem;font-weight:700}
+.resume button:hover{background-color:#8b0000;color:#fff;border-color:#fff}
+section.chef .ourChef>div{width:400px;height:450px}
+section.chef img{width:100%;height:340px;border:1px solid gray;box-shadow:none;transition:box-shadow .7s ease-in-out}
+section.chef{flex-direction:column;text-align:center}
+section.chef .ourChef{flex-direction:row;justify-content:space-evenly;width:100%;display:flex;text-align:center;flex-wrap:wrap}
+.chef h2{color:#8b0000;font-size:60px;margin-bottom:10px}
+.chef p{font-size:20px;color:#d6a70a;margin-bottom:2rem}
+.chef>div p{text-transform:capitalize;font-size:20px;color:#012046;margin-bottom:2px}
+.chef>div p:last-of-type{color:#8b0000;font-size:19px;font-family:Sacramento-Regular;font-weight:700;margin-bottom:20px}
+section.chef .ourChef>div img:hover{box-shadow:2px 2px 6px #777}
+section.Menu>div{display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;padding:.5rem}
+section.Menu .categoryImage{width:300px;background-color:#8b0000;height:700px;margin-right:0}
+section.Menu .categoryImage img{width:100%;height:50%}
+section.Menu .categoryImage p{color:#fff;text-align:center;font-size:30px}
+section.Menu .container{display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;margin-left:-10px;width:700px;background-color:#f0a94c;height:700px}
+.Menu{display:flex;flex-direction:column;width:90%;margin-left:5%;margin-right:5%}
+.Menu>div{height:800px}
+@media(min-width:200px) and (max-width:1200px){
+section.Menu .container{width:100%;height:100%;margin-left:0;margin-right:0}
+section.Menu .categoryImage{width:100%;height:600px;margin-right:0}
+section.Menu .categoryImage img{height:75%}
+section.Menu .container .card{width:250px}
+.Menu>div{height:100%}
+}
+.Menu .card img{width:200px;border:3px solid #8b0000}
+.card{width:200px;height:200px;margin:15px;flex-basis:1 auto;align-self:center;justify-content:center;position:relative}
+.Menu .card .back2{position:absolute;z-index:3;background-color:rgba(0,0,1,.8);width:202px;height:61px;top:35%;left:2px;display:flex;flex-direction:column;justify-content:space-evenly;display:none}
+.card .back2 p{color:#ececce;text-align:center;font-weight:550;width:100%;padding-top:30px}
+.card .back2 p:last-of-type{color:#8b0000;padding:0;background-color:#fff}
+.Menu .card:hover .back2{display:flex}
+.contact{padding-bottom:30px;padding-bottom:30px;background-color:#000;flex-direction:column;margin:0}
+section.contact .container{display:flex;flex-direction:row;width:100%;justify-content:space-evenly;margin:0}
+.contact h2,.contact h3{color:#8b0000;justify-content:center;align-self:center}
+.contact h2{color:#c7ad64;margin-bottom:30px;margin-left:0}
+.contact p{color:gray}
+.contact p:hover{box-shadow:none}
+.contact .info ul{width:100%;margin-left:0;padding:0}
+.contact .info ul li{list-style:none;color:#696969;font-weight:800;margin:0 10px 30px 0;font-weight:200}
+.contact .container .info{width:400px;margin-left:5%}
+.contact .container form{width:500px;justify-content:center;margin-left:5%}
+.contact form label{color:#fff;text-transform:capitalize;margin:10px;text-align:center;padding:20px;line-height:50px;font-weight:500;font-family:Verdana,Geneva,Tahoma,sans-serif}
+input{width:300px;height:50px;background-color:#000;border:none;border-bottom:3px solid #fff;color:#fff;margin-bottom:20px}
+textarea{color:#fff;overflow:auto;background-color:#000;border:none;box-shadow:3px 3px 3px #8b0000,3px 3px 3px #fff;width:300px;height:100px}
+form input[type=submit]{color:#fff8dc;background-color:#000;font-weight:600;width:318px;height:60px;cursor:pointer;text-transform:capitalize;font-size:20px;margin-top:30px;margin-left:174px}
+form input[type=submit]:hover{background:linear-gradient(130deg,#000,#8b0000)}
+section.ourMenu{display:flex;flex-direction:column;justify-content:center}
+.Menu h2,.ourMenu h2{justify-content:center;align-items:center}
+.category a{text-decoration:none;color:#d6a70a;font-weight:700;font-size:30px}
+.ourMenu{width:100%}
+.ourMenu .container{display:flex;flex-direction:row;justify-content:center;align-items:center;width:90%;margin-left:5%;margin-right:5%}
+.category{width:450px;padding:3.5rem;list-style-type:none;display:flex;flex-direction:column;justify-content:center;align-items:center}
+ul.category:first-of-type{background-color:#c7ad64}
+ul.category:last-of-type{background-color:#8b0000}
+.category li{margin-bottom:15px;background-color:#fff;padding:1rem;width:200px;text-align:center;cursor:pointer;border-bottom:5px solid #8b0000}
+ul.category:last-of-type li{border-bottom:5px solid #c7ad64}
+footer{background-color:#8b0000;color:#fff;padding:20px 0;text-align:center;font-size:20px;margin:0}
+@media only screen and (min-device-width :200px) and (max-device-width :1024px){
+body{width:1024px}
+section{width:1024px}
+section.container{width:1024px;margin:0}
+section.chef .ourChef>div{width:600px}
+section.contact form input[type=submit]{margin-left:170px}
+header nav ul{width:100%}
+.aboutus .info,.skills{height:100%}
+.myskills .ourSkills .skill{margin-bottom:.5%}
+section.Menu .categoryImage{width:100%;height:500px;margin-right:0}
+section.Menu .categoryImage img{height:80%}
+.Menu>div{height:100%}
+.resume .cardResume{width:600px;height:500px}
+.resume .cardResume>div{width:600px;height:500px}
+p{font-size:24px}
+.head img{margin:10px;width:180px;height:180px}
+.front p{line-height:20px;text-align:center;justify-content:center;color:snow;line-height:2rem;margin:120px;margin-bottom:20px;font-size:20px}
+.front span{color:#c7ad64;font-size:30px;font-family:Sacramento-Regular;font-weight:700}
+.Menu .card .back2{top:32%;left:2px;display:flex;flex-direction:column;justify-content:space-evenly;display:none}
+.card .back2 p{color:#ececce;text-align:center;font-weight:550;width:100%;padding-top:30px}
+.card .back2 p:last-of-type{color:#8b0000;padding:0;background-color:#fff;margin-top:0}
+h2{font-size:50px}
+nav a{font-size:30px}
+header nav h2{justify-content:center;text-transform:uppercase;font-size:30px;font-family:Pacifico;width:100%;margin-right:0;margin-left:1rem;margin-bottom:1;text-align:center}
+header nav{margin-top:-1%}
+.features .feat{width:100%}
+.skills{width:100%}
+.ourSkills{width:100%}
+section.chef .ourChef{align-items:center}
+section.aboutus .image{height:300px}
+.contact input[type=submit]{margin-left:10px}
+section.features h2{margin-right:2%;color:#fff;font-size:40px}
+.aboutus .container>div{width:100%}
+.aboutus .container>div.image{width:100%;height:500px}
+h3{font-size:30px}
+.features .feat p{font-size:27px}
+}
